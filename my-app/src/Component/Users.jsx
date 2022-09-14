@@ -15,14 +15,17 @@ const Users = () => {
         }
     }, []);
 
-    console.log(user)
+
 
     return (
         <div className="mt-5">
-            {
-                [user].map(data => 
-                    <ShowUser data={data} />)
-            }
+            <h3>Table users</h3>
+           <div>
+                {
+                    [user].map(data => 
+                        <ShowUser data={data} />)
+                }
+           </div>
         </div>
     )
 }

@@ -24,6 +24,7 @@ const Authorization = () => {
 
     return (
             <div>
+                <h3>Account for erp.apptrix.ru : erp_user / 12qwaszx12qwaszx</h3>
                 <div id="post-object-form">
                 <div className="form-horizontal">
                     <div>
