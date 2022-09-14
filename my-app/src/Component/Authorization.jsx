@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { getRepo } from '../api/apiAuthorization'
+import { getRepo } from '../api/apiAuthorization';
 
 const Authorization = () => {
     let username;
@@ -20,30 +20,31 @@ const Authorization = () => {
         } 
     }
     
+    
 
     return (
             <div>
-                <div class="" id="post-object-form">
-                <div class="form-horizontal">
+                <div id="post-object-form">
+                <div className="form-horizontal">
                     <div>
-                        <div class="form-group ">
-                            <label class="col-sm-2 control-label ">
+                        <div className="form-group ">
+                            <label className="col-sm-2 control-label ">
                                 Username
                             </label>
-                        <div class="col-sm-10">
-                            <input onInput={getUserName} name="username" class="form-control" type="text" id="username"/>
+                        <div className="col-sm-10">
+                            <input onInput={getUserName} name="username" className="form-control" type="text" id="username" />
                         </div>
                         </div>
-                        <div class="form-group ">
-                            <label class="col-sm-2 control-label ">
+                        <div className="form-group ">
+                            <label className="col-sm-2 control-label ">
                                 Password
                             </label>
-                        <div class="col-sm-10">
-                            <input onInput={getPasswordName} name="password" class="form-control" type="text" id="password"/>
+                        <div className="col-sm-10">
+                            <input onInput={getPasswordName} name="password" className="form-control" type="text" id="password" />
                         </div>
                         </div>
-                            <div class="form-actions">
-                                <button onClick={()=> checkAuth() } class="btn btn-primary mt-3" >POST</button>
+                            <div className="form-actions">
+                                <button onClick={()=> checkAuth() } className="btn btn-primary mt-3" >POST</button>
                             </div>
                     </div>
                 </div>
