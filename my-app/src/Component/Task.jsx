@@ -7,19 +7,14 @@ import { getTask } from '../api/apiTask';
 const Task = () => {
      const dispatch = useDispatch();
      const task = useSelector(state => state.task.items);
-     let textInput= 'project';
-     useEffect(() => {
-         
-         dispatch(getTask(textInput))
-     }, [])
-
-    console.log(task)
-     
-     
-
      const onFindProject = (e) => {
-        
+         if(e.target.value.length >= 3) dispatch(getTask(e.target.value))
      }
+       
+     useEffect(() => {
+         dispatch(getTask())
+     }, [])
+     
     return (
         <div className="mt-5">
             <h3>Search task</h3>
